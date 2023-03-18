@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FlyoutPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="Restaurant_Mardo.Views.MyHomeMaster"
+            NavigationPage.HasNavigationBar="False"
+            NavigationPage.HasBackButton="False"
+            xmlns:pages="clr-namespace:Restaurant_Mardo.Views">
+    <!--ESta es nuestra pantalla maestra donde le declaramos cual pagina sera nuestro detalle 
+    y cual sea nuestra pantalla del menu-->
+
+    <!--Pagina del menu-->
+    <FlyoutPage.Flyout>
+        <pages:MyHomeMasterFlyout x:Name="FlyoutPage" BackgroundColor="Brown"/>
+  </FlyoutPage.Flyout>
+    <!--Pagina de los detalles-->
+  <FlyoutPage.Detail>
+    <NavigationPage>
+      <x:Arguments>
+        <pages:HomePage />
+      </x:Arguments>
+    </NavigationPage>
+  </FlyoutPage.Detail>
+</FlyoutPage>

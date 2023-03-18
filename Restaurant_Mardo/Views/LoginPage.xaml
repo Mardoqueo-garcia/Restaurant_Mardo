@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Restaurant_Mardo.Views.LoginPage"
+             NavigationPage.HasNavigationBar="False"
+             NavigationPage.HasBackButton="False"
+             BackgroundImageSource="terrorfondo.jpg">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout VerticalOptions="Center" 
+                         HorizontalOptions="FillAndExpand" 
+                         Padding="40" 
+                         Margin="15">
+                <Frame VerticalOptions="FillAndExpand"
+                       Margin="40" BorderColor="Black" CornerRadius="22">
+                    <Image Source="login.png" 
+                           Margin="-10" 
+                           VerticalOptions="FillAndExpand" 
+                           HorizontalOptions="FillAndExpand"/>
+                </Frame>
+
+                <Entry x:Name="txtUser" Placeholder="Username" 
+                       PlaceholderColor="Gray" TextColor="White" FontAttributes="Italic"></Entry>
+                <Entry x:Name="txtPassword" Placeholder="Password"
+                       PlaceholderColor="Gray" TextColor="White" IsPassword="True" FontAttributes="Italic"></Entry>
+
+                <Button Text="Login" 
+                        Margin="10"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        TextColor="Black"
+                        BorderColor="Red"
+                        BackgroundColor="White"
+                        CornerRadius="10"
+                        BorderWidth="3"
+                        x:Name="Login"
+                        Clicked="Login_Clicked"/>
+
+                <Label HorizontalOptions="Center" Margin="4">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Aun no tienes una cuenta?" TextColor="White"></Span>
+
+                            <Span Text=" Registrarse" 
+                                  TextColor="White" 
+                                  FontAttributes="Bold" 
+                                  TextDecorations="Underline"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                    <!--La funcion tapped nos sirve para que al tocar nuestro label este ejecute una funcion-->
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

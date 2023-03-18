@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="launcher_background">#7FFFD4</color>
+	<color name="colorPrimary">#7FFFD4</color>
+	<color name="colorPrimaryDark">#7FFFD4</color>
+	<color name="colorAccent">#7FFFD4</color>
+	<!--este sera nuestro color de fondo del splash que definidimos en nuestro archivo xml-->
+	<color name="splash_background">#7FFFD4</color>
+</resources>

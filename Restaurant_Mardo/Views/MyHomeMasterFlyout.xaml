@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Restaurant_Mardo.Views.MyHomeMasterFlyout"
+             Title="Menu">
+    <StackLayout Padding="5" Margin="5">
+        <!--creamos nuestra lista que se mostrara en nuestra pantalla desplegable-->
+        <!--ItemsSource....lo bindamos como MenuItems.....con ese nombre llenaremos nuestra lista en 
+      nuestro codigo c#-->
+        <ListView x:Name="MenuItemsListView"
+                  SeparatorVisibility="None"
+                  HasUnevenRows="True"
+                  ItemsSource="{Binding MenuItems}"
+                  Margin="5">
+
+            <!--Esta es nuestro encabezado de la lista-->
+            <ListView.Header>
+                <Frame BorderColor="Red" CornerRadius="25" Padding="15" Margin="15">
+                    <Image Source="LogoSm.jpg" 
+                           Aspect="AspectFill" 
+                           VerticalOptions="FillAndExpand" 
+                           HorizontalOptions="FillAndExpand"
+                           Margin="-5"/>
+                </Frame>
+            </ListView.Header>
+            <!--Con esta lista le mandaremos los titulos de nuestra lista creada a nuestra view-->
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Padding="10" Margin="10" HorizontalOptions="FillAndExpand">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="45"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Image Source="{Binding IconSource}"/>
+                                <Label Grid.Column="1" 
+                                       TextColor="White"
+                                       FontSize="Subtitle"
+                                       FontAttributes="Bold"
+                                       Text="{Binding Title}" 
+                                       VerticalTextAlignment="Center"
+                                       HorizontalOptions="Start"/>
+
+                            </Grid>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button Text="Cerrar Sesión"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                TextColor="Black"
+                BackgroundColor="White"
+                CornerRadius="15"
+                BorderWidth="2"
+                Margin="50"
+                x:Name="Logout"
+                BorderColor="Red"
+                Clicked="Logout_Clicked"/>
+
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Restaurant_Mardo.Views.HomePage"
+             NavigationPage.IconColor="Black"
+             BackgroundImageSource="fondomenu.jpg">
+    <ContentPage.Content>
+        <StackLayout Margin="5" Padding="25">
+            <Label Text="Bienvenido Mardoqueo al grupo de xamarin"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand" />
+
+            <Label HorizontalOptions="Center" 
+                   TextColor="Red"
+                   VerticalOptions="EndAndExpand"
+                   WidthRequest="50" 
+                   HeightRequest="50">Pie de pagina</Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
