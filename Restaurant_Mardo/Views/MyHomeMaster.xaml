@@ -10,13 +10,13 @@
 
     <!--Pagina del menu-->
     <FlyoutPage.Flyout>
-        <pages:MyHomeMasterFlyout x:Name="FlyoutPage" BackgroundColor="Brown"/>
+        <pages:MyHomeMasterFlyout x:Name="FlyoutPage" BackgroundColor="{StaticResource BackgroundColor}"/>
   </FlyoutPage.Flyout>
     <!--Pagina de los detalles-->
   <FlyoutPage.Detail>
-    <NavigationPage>
+    <NavigationPage BarBackgroundColor="{StaticResource BackgroundColor}">
       <x:Arguments>
-        <pages:HomePage />
+        <pages:HomePage/>
       </x:Arguments>
     </NavigationPage>
   </FlyoutPage.Detail>

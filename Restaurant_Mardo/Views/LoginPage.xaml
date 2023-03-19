@@ -12,7 +12,7 @@
                          Padding="40" 
                          Margin="15">
                 <Frame VerticalOptions="FillAndExpand"
-                       Margin="40" BorderColor="Black" CornerRadius="22">
+                       Margin="40" BorderColor="{StaticResource BorderColor2}" CornerRadius="22">
                     <Image Source="login.png" 
                            Margin="-10" 
                            VerticalOptions="FillAndExpand" 
@@ -20,16 +20,16 @@
                 </Frame>
 
                 <Entry x:Name="txtUser" Placeholder="Username" 
-                       PlaceholderColor="Gray" TextColor="White" FontAttributes="Italic"></Entry>
+                       PlaceholderColor="Gray" TextColor="{StaticResource TextColor1}" FontAttributes="Italic"></Entry>
                 <Entry x:Name="txtPassword" Placeholder="Password"
-                       PlaceholderColor="Gray" TextColor="White" IsPassword="True" FontAttributes="Italic"></Entry>
+                       PlaceholderColor="Gray" TextColor="{StaticResource TextColor1}" IsPassword="True" FontAttributes="Italic"></Entry>
 
                 <Button Text="Login" 
                         Margin="10"
                         VerticalOptions="Center"
                         HorizontalOptions="Center"
-                        TextColor="Black"
-                        BorderColor="Red"
+                        TextColor="{StaticResource TextColor3}"
+                        BorderColor="{StaticResource BorderColor1}"
                         BackgroundColor="White"
                         CornerRadius="10"
                         BorderWidth="3"
@@ -39,10 +39,10 @@
                 <Label HorizontalOptions="Center" Margin="4">
                     <Label.FormattedText>
                         <FormattedString>
-                            <Span Text="Aun no tienes una cuenta?" TextColor="White"></Span>
+                            <Span Text="Aun no tienes una cuenta?" TextColor="{StaticResource TextColor1}"></Span>
 
                             <Span Text=" Registrarse" 
-                                  TextColor="White" 
+                                  TextColor="{StaticResource TextColor1}" 
                                   FontAttributes="Bold" 
                                   TextDecorations="Underline"/>
                         </FormattedString>

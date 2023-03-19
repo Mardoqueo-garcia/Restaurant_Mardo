@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Restaurant_Mardo.Views.ViewsOther.DrinkPage"
-             NavigationPage.IconColor="Black"
+             NavigationPage.IconColor="{StaticResource IconColor}"
              BackgroundImageSource="bebidafondo3.jpg">
     <ContentPage.Content>
         <StackLayout>

@@ -3,6 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Restaurant_Mardo.App">
     <Application.Resources>
+        <ResourceDictionary>
+            <!-- colores generales -->
+            <Color x:Key="TextColor1">#ffff</Color>
+            <Color x:Key="TextColor2">#E00B18</Color>
+            <Color x:Key="TextColor3">#0B0B0B</Color>
+            <Color x:Key="IconColor">#0B0B0B</Color>
+            <Color x:Key="BackgroundColor">#A42307</Color>
+            <Color x:Key="BorderColor1">#E00B18</Color>
+            <Color x:Key="BorderColor2">#0B0B0B</Color>
+        </ResourceDictionary>
 
     </Application.Resources>
 </Application>

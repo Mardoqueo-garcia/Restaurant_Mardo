@@ -7,6 +7,8 @@ namespace Restaurant_Mardo
 {
     public partial class App : Application
     {
+        public static object Navigator { get; internal set; }
+
         public App()
         {
             InitializeComponent();

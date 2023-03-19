@@ -15,7 +15,7 @@
 
             <!--Esta es nuestro encabezado de la lista-->
             <ListView.Header>
-                <Frame BorderColor="Red" CornerRadius="25" Padding="15" Margin="15">
+                <Frame BorderColor="{StaticResource BorderColorButton}" CornerRadius="25" Padding="15" Margin="15">
                     <Image Source="LogoSm.jpg" 
                            Aspect="AspectFill" 
                            VerticalOptions="FillAndExpand" 
@@ -35,7 +35,7 @@
                                 </Grid.ColumnDefinitions>
                                 <Image Source="{Binding IconSource}"/>
                                 <Label Grid.Column="1" 
-                                       TextColor="White"
+                                       TextColor="{StaticResource TextColor1}"
                                        FontSize="Subtitle"
                                        FontAttributes="Bold"
                                        Text="{Binding Title}" 
@@ -51,13 +51,13 @@
         <Button Text="Cerrar Sesión"
                 VerticalOptions="Center"
                 HorizontalOptions="Center"
-                TextColor="Black"
+                TextColor="{StaticResource TextColor3}"
                 BackgroundColor="White"
                 CornerRadius="15"
                 BorderWidth="2"
                 Margin="50"
                 x:Name="Logout"
-                BorderColor="Red"
+                BorderColor="{StaticResource BorderColor1}"
                 Clicked="Logout_Clicked"/>
 
     </StackLayout>

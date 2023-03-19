@@ -11,7 +11,7 @@
                    HorizontalOptions="CenterAndExpand" />
 
             <Label HorizontalOptions="Center" 
-                   TextColor="Red"
+                   TextColor="{StaticResource TextColor2}"
                    VerticalOptions="EndAndExpand"
                    WidthRequest="50" 
                    HeightRequest="50">Pie de pagina</Label>
